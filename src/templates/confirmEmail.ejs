@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        .header_container {
+            height: 100px;
+            display: flex;
+            justify-content: flex-start;
+            top: 0;
+            position: sticky;
+        }
+
+        .logo {
+            width: 150px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding-left: 50px;
+        }
+
+        .logo_img {
+            height: 30px;
+            width: auto;
+        }
+
+        .confirm_img {
+            height: 100px;
+            width: 100px;
+        }
+
+        .noti {
+            margin: 20px 300px auto 300px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            border: 1px solid #F0F0F0;
+            border-radius: 30px;
+        }
+
+        .btn {
+            color: white;
+            background-color: #003DA6;
+            border: none;
+            border-radius: 50px;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='header_container'>
+        <div class='left'>
+            <div class='logo'>
+                <img class="logo_img" href="<%= link %>"
+                    src="https://firebasestorage.googleapis.com/v0/b/project-curaprox.appspot.com/o/logo.png?alt=media&token=939aca63-2a5d-42d5-84cb-92f064852669"
+                    alt='logo' />
+            </div>
+        </div>
+    </div>
+    <div class="noti">
+        <h2>Done!</h2>
+        <img class="confirm_img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc_qsImdOvBVWNHh-bmyDDCDbpBJJ9kq6RTu8jBMp8na9KP9Zy3sOwwKHrncJeRsUL58c&usqp=CAU" />
+        <span>Success! Your email has been verified.</span>
+        <button href="http://127.0.0.1:3000/" class="btn">Return to login</button>
+    </div>
+</body>
+
+</html>
